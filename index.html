@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/808858d18b.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <!-- Nav -->
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i> (<span class="total-count"></span>)
+    </div>
+</nav>
+
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch1.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Samsung Galaxy Active 2</h4>
+    <p class="card-text">Price: $375</p>
+    <a href="#" data-name="Samsung" data-price="375" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch2.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Huawei GT</h4>
+    <p class="card-text">Price: $299</p>
+    <a href="#" data-name="HuaweiGT" data-price="299" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch3.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Honor Watch</h4>
+    <p class="card-text">Price: $185</p>
+    <a href="#" data-name="HonorWatch" data-price="185" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch4.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Piraso</h4>
+    <p class="card-text">Price: $399</p>
+    <a href="#" data-name="Piraso" data-price="399" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch5.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Armani Watch</h4>
+    <p class="card-text">Price: $1185</p>
+    <a href="#" data-name="ArmaniWatch" data-price="1185" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch6.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Relish Analog</h4>
+    <p class="card-text">Price: $766</p>
+    <a href="#" data-name="RelishAnalog" data-price="766" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch7.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Nike Apple Watch</h4>
+    <p class="card-text">Price: $999</p>
+    <a href="#" data-name="NikeAppleWatch" data-price="999" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch8.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Jord - Ebony & Iron</h4>
+    <p class="card-text">Price: $1999</p>
+    <a href="#" data-name="Jord-EbonyIron" data-price="1999" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="./img/watch9.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Wenger Classic Active Chronograph</h4>
+    <p class="card-text">Price: $249</p>
+    <a href="#" data-name="WengerClassicActiveChronograph" data-price="249" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+      </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+<script src="main.js"></script>
+</body>
+</html>
